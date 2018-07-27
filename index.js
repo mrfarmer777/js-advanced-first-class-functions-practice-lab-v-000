@@ -30,8 +30,10 @@ function driversByName(drvs){
 
 function totalRevenue(drvs){
   console.log(drvs[0].revenue);
-  return drvs.reduce(function(total,drv){
-    return total+(drv.revenue);
-  });
+  return drvs.reduce(getTotal,0);
+}
+
+function getTotal(total,num){
+  return total+num;
 }
 
