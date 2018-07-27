@@ -14,6 +14,7 @@ function logDriversByHometown(drvs,location){
 }
 
 function driversByRevenue(drvs){
+  myDrvs=drvs.slice();
   return drvs.sort(function(a,b){
     //Subtract second driver's revenue from first's. Two should switch if number is negative.
     return a.revenue-b.revenue;
