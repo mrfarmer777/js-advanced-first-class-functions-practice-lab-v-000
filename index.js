@@ -37,3 +37,9 @@ function getTotal(total,el){
   return total+el.revenue;
 }
 
+function averageRevenue(drvs){
+  return drvs.reduce(function(accu,el,ind,arr){
+    return accu/arr.length;
+  })
+}
+
