@@ -19,3 +19,7 @@ function driversByRevenue(drvs){
     return a.revenue-b.revenue;
   });
 }
+
+function totalRevenue(drvs){
+  
+}
