@@ -33,7 +33,7 @@ function totalRevenue(drvs){
   return drvs.reduce(getTotal,0);
 }
 
-function getTotal(total,num){
-  return total+num;
+function getTotal(total,el){
+  return total+el.revenue;
 }
 
