@@ -29,7 +29,7 @@ function driversByName(drvs){
 }
 
 function totalRevenue(drvs){
-  return drvs.reduce(function(total,drv){
+  drvs.reduce(function(total,drv){
     return total+(drv.revenue);
   });
 }
