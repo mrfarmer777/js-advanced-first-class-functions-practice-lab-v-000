@@ -12,3 +12,9 @@ function logDriversByHometown(drvs,location){
     }
   });
 }
+
+function driversByRevenue(drvs){
+  return drvs.sort(function(a,b){
+    return a.revenue-b.revenue;
+  });
+}
