@@ -24,7 +24,7 @@ function driversByRevenue(drvs){
 function driversByName(drvs){
   myDrvs=drvs.slice();
   return myDrvs.sort(function(a,b){
-    return a.localeCompare(b);
+    return a.name.localeCompare(b.name);
   });
 }
 
